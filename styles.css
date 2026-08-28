@@ -5282,26 +5282,24 @@ img { background-color: #ffffff !important; }
    3. Hero overlay - slightly less dim
    ============================================ */
 
-/* ---------- 1. HEADER BRAND TEXT (Playfair Display - premium luxury serif, bigger, bolder) ---------- */
-.logo {
-  font-family: 'Playfair Display', 'Source Serif 4', Georgia, serif !important;
-  font-size: clamp(22px, 2.6vw, 30px) !important;
-  font-weight: 800 !important;
-  letter-spacing: 0.01em !important;
-  color: var(--ink) !important;
+/* ---------- 1. HEADER LOGO MARK (real Greenz by Danube logo image) ---------- */
+.logo-mark {
+  display: flex !important;
+  align-items: center;
+}
+.logo-img {
+  height: 50px;
+  width: auto;
+  display: block;
+  mix-blend-mode: multiply;
 }
 
 @media (max-width: 520px) {
-  .logo {
-    font-size: 20px !important;
-    letter-spacing: 0.005em !important;
-  }
+  .logo-img { height: 42px; }
 }
 
 @media (max-width: 380px) {
-  .logo {
-    font-size: 18px !important;
-  }
+  .logo-img { height: 36px; }
 }
 
 /* ---------- 2. SAMPLE FLAT VIDEO BUTTON - keep label visible on mobile ---------- */
@@ -5390,17 +5388,19 @@ img { background-color: #ffffff !important; }
    Brand dark-green hero emphasis (Danube Greenz palette, default supplied)
    ============================================ */
 .hero-mainline em {
-  display: inline-block;
+  display: block;
+  width: fit-content;
+  max-width: 94%;
   color: #1F7A34 !important;
   font-style: italic;
   font-weight: 700;
-  background: rgba(255, 255, 255, 0.88);
-  padding: 0.15em 0.45em;
-  margin-top: 0.2em;
-  border-radius: 12px;
-  box-shadow: 0 6px 22px rgba(0,0,0,0.3), inset 0 0 0 1px rgba(212,188,140,0.5);
+  background: rgba(255, 255, 255, 0.94);
+  padding: 0.18em 0.6em;
+  margin: 0.5em auto 0;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35), inset 0 0 0 1px rgba(212,188,140,0.55);
   text-shadow: none;
-  line-height: 1.25;
+  line-height: 1.15;
 }
 .hero-mainline,
 .hero-support,
