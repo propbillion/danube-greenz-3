@@ -5288,18 +5288,18 @@ img { background-color: #ffffff !important; }
   align-items: center;
 }
 .logo-img {
-  height: 50px;
+  height: 96px;
   width: auto;
   display: block;
   mix-blend-mode: multiply;
 }
 
 @media (max-width: 520px) {
-  .logo-img { height: 42px; }
+  .logo-img { height: 74px; }
 }
 
 @media (max-width: 380px) {
-  .logo-img { height: 36px; }
+  .logo-img { height: 62px; }
 }
 
 /* ---------- 2. SAMPLE FLAT VIDEO BUTTON - keep label visible on mobile ---------- */
@@ -5490,3 +5490,19 @@ img { background-color: #ffffff !important; }
    card is single-column now (no leftover empty gap)
    ============================================ */
 .rera-card { grid-template-columns: 1fr !important; }
+
+/* ============================================
+   Header height bump - accommodate larger logo comfortably
+   ============================================ */
+.header-row { height: 116px !important; }
+@media (max-width: 768px) {
+  .header-row { height: 92px !important; }
+}
+.action-bar-wrap { top: 116px !important; }
+@media (max-width: 768px) {
+  .action-bar-wrap { top: 92px !important; }
+}
+.page-offset { padding-top: 164px !important; }
+@media (max-width: 768px) {
+  .page-offset { padding-top: 136px !important; }
+}
