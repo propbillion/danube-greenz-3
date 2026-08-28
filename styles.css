@@ -3148,7 +3148,7 @@ img[loading="lazy"].img-loaded {
 }
 
 /* ============================================
-   V9 — HERO PERFORMANCE REDESIGN
+   V9 - HERO PERFORMANCE REDESIGN
    Conversion-focused above-the-fold rebuild
    Preserves luxury aesthetic; adds inline form,
    sharper headline hierarchy, USP strip.
@@ -3160,7 +3160,7 @@ img[loading="lazy"].img-loaded {
   padding: 3rem 1.5rem 3.5rem;
 }
 
-/* New performance headline — replaces .hero-philosophy */
+/* New performance headline - replaces .hero-philosophy */
 .hero-headline-v2 {
   font-family: 'Source Serif 4', Georgia, serif;
   font-variation-settings: "opsz" 32;
@@ -3179,7 +3179,7 @@ img[loading="lazy"].img-loaded {
   color: #D4BC8C;
 }
 
-/* Sub-headline — USP one-liner */
+/* Sub-headline - USP one-liner */
 .hero-sub-v2 {
   margin: 1rem auto 0;
   max-width: 600px;
@@ -3444,11 +3444,11 @@ p.hero-headline-v2.hero-config-pill {
 }
 
 /* ============================================
-   V9 — BROCHURE-ALIGNED RUNWAL LAYER
+   V9 - BROCHURE-ALIGNED RUNWAL LAYER
    Gold accents · Cream warmth · Editorial trim
    ============================================ */
 
-/* Body warmth — slight cream undertone */
+/* Body warmth - slight cream undertone */
 body {
   background: var(--bone);
 }
@@ -3473,7 +3473,7 @@ body {
   color: var(--gold-light) !important;
 }
 
-/* Headlines — slight serif weight, deeper ink */
+/* Headlines - slight serif weight, deeper ink */
 .h-section,
 .soul-title,
 .sig-title {
@@ -3481,7 +3481,7 @@ body {
   letter-spacing: -0.01em;
 }
 
-/* Italic emphasis — gold not maroon */
+/* Italic emphasis - gold not maroon */
 .h-section em,
 .soul-title em,
 .sig-title em,
@@ -3491,7 +3491,7 @@ body {
   font-style: italic;
 }
 
-/* Sky Club / signature card titles on dark — gold accent */
+/* Sky Club / signature card titles on dark - gold accent */
 .section-usps .h-section,
 .prereg-section .h-section {
   color: var(--bone) !important;
@@ -3527,7 +3527,7 @@ body {
 .hero-eyebrow::before,
 .hero-eyebrow::after { display: none !important; }
 
-/* Hero word colors — gold + cream serif (brochure cover) */
+/* Hero word colors - gold + cream serif (brochure cover) */
 .hv-word:first-child {
   color: var(--gold-light) !important;
 }
@@ -3535,7 +3535,7 @@ body {
   color: #ffffff !important;
 }
 
-/* Trust strip — emerald background with gold rule */
+/* Trust strip - emerald background with gold rule */
 .trust-strip {
   background: var(--brand) !important;
   color: var(--bone);
@@ -3574,11 +3574,11 @@ body {
   background: var(--gold-light) !important;
 }
 
-/* Background section variants — warm cream tones */
+/* Background section variants - warm cream tones */
 .bg-bone { background: var(--bone) !important; }
 .bg-mist { background: var(--pure-white) !important; }
 
-/* USP card — emerald over deep emerald with gold rule */
+/* USP card - emerald over deep emerald with gold rule */
 .section-usps {
   background: var(--brand-deeper) !important;
 }
@@ -3602,7 +3602,7 @@ body {
 .usp-title { color: var(--bone) !important; font-family: 'Source Serif 4', serif; }
 .usp-sub { color: rgba(255, 255, 255, 0.62) !important; }
 
-/* Buttons — emerald with gold-line on hover (brochure language) */
+/* Buttons - emerald with gold-line on hover (brochure language) */
 .btn-glass-brand {
   background: var(--brand) !important;
   border: 1px solid var(--brand) !important;
@@ -3661,7 +3661,7 @@ body {
   border-bottom-color: var(--gold-light) !important;
 }
 
-/* Header — bone with gold underline */
+/* Header - bone with gold underline */
 .header {
   background: rgba(255, 255, 255, 0.92) !important;
   backdrop-filter: blur(18px);
@@ -3686,7 +3686,7 @@ body {
   border-color: var(--brand) !important;
 }
 
-/* Action bar — cream with gold-line dividers */
+/* Action bar - cream with gold-line dividers */
 .action-bar-wrap {
   background: var(--bone-warm) !important;
   border-bottom: 1px solid var(--gold-line) !important;
@@ -3702,7 +3702,7 @@ body {
   border-color: var(--brand) !important;
 }
 
-/* Price card — premium white card on neutral backdrop */
+/* Price card - premium white card on neutral backdrop */
 .price-card {
   background: var(--pure-white) !important;
   border: 1px solid var(--gold-line) !important;
@@ -3734,7 +3734,7 @@ body {
   color: var(--gold-deep) !important;
 }
 
-/* Signature card — emerald deep with gold accents */
+/* Signature card - emerald deep with gold accents */
 .signature-card {
   background: linear-gradient(135deg, var(--brand) 0%, var(--brand-deeper) 100%) !important;
   border: 1px solid var(--gold-line) !important;
@@ -3856,7 +3856,7 @@ body {
 .rera-card .h-card { color: var(--brand) !important; font-family: 'Source Serif 4', serif; }
 .rera-qr .l { color: var(--gold-deep) !important; }
 
-/* Pre-register section — dark emerald with gold rule */
+/* Pre-register section - dark emerald with gold rule */
 .prereg-section {
   background: linear-gradient(180deg, var(--brand-deeper) 0%, var(--brand) 100%) !important;
   position: relative;
@@ -3923,7 +3923,7 @@ body {
 }
 .footer-disclaimer strong { color: var(--gold-light) !important; }
 
-/* Hero form inputs — match brochure dark vs cream */
+/* Hero form inputs - match brochure dark vs cream */
 .hf-input {
   background: rgba(255, 255, 255, 0.94) !important;
   border: 1px solid var(--gold) !important;
@@ -4007,7 +4007,7 @@ body {
 /* Image placeholder warmer */
 img { background-color: var(--bone-warm) !important; }
 
-/* Hero config pill — gold rule instead of plain glass */
+/* Hero config pill - gold rule instead of plain glass */
 p.hero-headline-v2.hero-config-pill {
   border: 1px solid rgba(20, 86, 58, 0.32) !important;
 }
@@ -4058,7 +4058,7 @@ p.hero-headline-v2.hero-config-pill em {
   text-align: center;
 }
 
-/* Section utility — adds gold thin frame to important callouts */
+/* Section utility - adds gold thin frame to important callouts */
 .gold-frame {
   border: 1px solid var(--gold);
   position: relative;
@@ -4388,7 +4388,7 @@ p.hero-headline-v2.hero-config-pill em {
 
 
 /* ============================================
-   V10 — APPLE-GRADE REFINEMENT LAYER
+   V10 - APPLE-GRADE REFINEMENT LAYER
    Pure white system · Glassmorphism cards · Cinematic spacing
    ============================================ */
 
@@ -4709,7 +4709,7 @@ body {
   margin: 0 0.5rem;
 }
 
-/* Hero config pill — refined glass */
+/* Hero config pill - refined glass */
 p.hero-headline-v2.hero-config-pill {
   background: rgba(255, 255, 255, 0.08) !important;
   backdrop-filter: blur(20px) saturate(180%) !important;
@@ -4729,7 +4729,7 @@ p.hero-headline-v2.hero-config-pill em {
   font-weight: 500;
 }
 
-/* Hero USP strip — refined */
+/* Hero USP strip - refined */
 .hero-usp-strip {
   margin-top: 2rem;
 }
@@ -4917,7 +4917,7 @@ p.hero-headline-v2.hero-config-pill em {
   line-height: 1.4;
 }
 
-/* ---------- Swipe carousel — premium animated captions ---------- */
+/* ---------- Swipe carousel - premium animated captions ---------- */
 .ag-caption-rail {
   position: relative;
   text-align: center;
@@ -4956,7 +4956,7 @@ p.hero-headline-v2.hero-config-pill em {
   color: var(--gold);
 }
 
-/* ---------- "Every Square Foot Considered" — primary configuration block ---------- */
+/* ---------- "Every Square Foot Considered" - primary configuration block ---------- */
 .every-sqft-section {
   background: #ffffff;
   padding: 7rem 1.25rem;
@@ -4995,7 +4995,7 @@ p.hero-headline-v2.hero-config-pill em {
 }
 .sky-tile:hover::before { opacity: 1; }
 
-/* ---------- Section that contains sky tiles — emerald background, not white ---------- */
+/* ---------- Section that contains sky tiles - emerald background, not white ---------- */
 .sky-amenities-section {
   background: linear-gradient(180deg, #0F2E1A 0%, #0F2E1A 100%) !important;
   color: #ffffff;
@@ -5013,7 +5013,7 @@ p.hero-headline-v2.hero-config-pill em {
   color: rgba(255, 255, 255, 0.74) !important;
 }
 
-/* ---------- Signature card — deeper metallic ---------- */
+/* ---------- Signature card - deeper metallic ---------- */
 .signature-card {
   background:
     linear-gradient(160deg, rgba(20, 86, 58, 0.10), transparent 50%),
@@ -5140,7 +5140,7 @@ p.hero-headline-v2.hero-config-pill em {
 .heritage-headline::before,
 .heritage-headline::after { display: none; }
 
-/* Heritage legacy stats — metallic on white */
+/* Heritage legacy stats - metallic on white */
 .legacy-tile {
   background: linear-gradient(180deg,
     rgba(255, 255, 255, 1) 0%,
@@ -5194,7 +5194,7 @@ img { background-color: #ffffff !important; }
     rgba(255, 255, 255, 0.02) 100%) !important;
 }
 
-/* ---------- Brochure spine on dark — wider tracking ---------- */
+/* ---------- Brochure spine on dark - wider tracking ---------- */
 .partners-section {
   background: linear-gradient(180deg, #0F2E1A 0%, #0F2E1A 100%) !important;
   padding: 7rem 1.25rem !important;
@@ -5276,10 +5276,10 @@ img { background-color: #ffffff !important; }
 }
 
 /* ============================================
-   V11 — MICRO REFINEMENTS (3 precision edits only)
-   1. Header brand text — slightly larger
-   2. Sample Flat Video — show label on mobile
-   3. Hero overlay — slightly less dim
+   V11 - MICRO REFINEMENTS (3 precision edits only)
+   1. Header brand text - slightly larger
+   2. Sample Flat Video - show label on mobile
+   3. Hero overlay - slightly less dim
    ============================================ */
 
 /* ---------- 1. HEADER BRAND TEXT (heavier, premium builder-campaign feel) ---------- */
@@ -5303,7 +5303,7 @@ img { background-color: #ffffff !important; }
   }
 }
 
-/* ---------- 2. SAMPLE FLAT VIDEO BUTTON — keep label visible on mobile ---------- */
+/* ---------- 2. SAMPLE FLAT VIDEO BUTTON - keep label visible on mobile ---------- */
 @media (max-width: 520px) {
   .header-cta {
     padding: 0.5rem 0.8rem !important;
@@ -5326,7 +5326,7 @@ img { background-color: #ffffff !important; }
   }
 }
 
-/* ---------- 3. HERO OVERLAY — reduce dimness slightly ---------- */
+/* ---------- 3. HERO OVERLAY - reduce dimness slightly ---------- */
 .hero-bg::after {
   background:
     linear-gradient(180deg, rgba(0,0,0,0.42) 0%, rgba(0,0,0,0.22) 40%, rgba(0,0,0,0.58) 100%),
