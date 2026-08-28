@@ -5390,16 +5390,17 @@ img { background-color: #ffffff !important; }
    Brand dark-green hero emphasis (Danube Greenz palette, default supplied)
    ============================================ */
 .hero-mainline em {
+  display: inline-block;
   color: #1F7A34 !important;
   font-style: italic;
   font-weight: 700;
   background: rgba(255, 255, 255, 0.88);
-  padding: 0.06em 0.4em;
-  border-radius: 10px;
+  padding: 0.15em 0.45em;
+  margin-top: 0.2em;
+  border-radius: 12px;
   box-shadow: 0 6px 22px rgba(0,0,0,0.3), inset 0 0 0 1px rgba(212,188,140,0.5);
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
   text-shadow: none;
+  line-height: 1.25;
 }
 .hero-mainline,
 .hero-support,
