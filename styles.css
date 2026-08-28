@@ -1786,6 +1786,8 @@ input:focus-visible {
   transform: scale(1.0);
   animation: hero2SlowZoom 18s ease-in-out infinite alternate;
   will-change: transform;
+  filter: blur(4px) brightness(0.97);
+  transform-origin: center;
 }
 @keyframes hero2SlowZoom {
   0%   { transform: scale(1.0); }
@@ -5280,22 +5282,24 @@ img { background-color: #ffffff !important; }
    3. Hero overlay — slightly less dim
    ============================================ */
 
-/* ---------- 1. HEADER BRAND TEXT (very slight size bump) ---------- */
+/* ---------- 1. HEADER BRAND TEXT (heavier, premium builder-campaign feel) ---------- */
 .logo {
-  font-size: clamp(16px, 1.8vw, 21px) !important;
-letter-spacing: 0.045em !important;
+  font-size: clamp(19px, 2.2vw, 25px) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.01em !important;
+  color: var(--ink) !important;
 }
 
 @media (max-width: 520px) {
   .logo {
-    font-size: 15px !important;
-    letter-spacing: 0.03em !important;
+    font-size: 18px !important;
+    letter-spacing: 0.005em !important;
   }
 }
 
 @media (max-width: 380px) {
   .logo {
-    font-size: 14px !important;
+    font-size: 16.5px !important;
   }
 }
 
@@ -5425,28 +5429,56 @@ letter-spacing: 0.045em !important;
   .hsc-link::after { animation: none; opacity: 0; }
 }
 /* ============================================
-   VISIBLE IMAGE-SLOT NUMBERING (internal reference only)
-   Shows a small badge on every image placeholder so PROPBILLION
-   can say "change IMAGE 1" or "PLAN 4" and it is visually findable
-   on the live page. REMOVE this block before final public launch.
+   VISIBLE IMAGE-SLOT NUMBERING - DISABLED
+   (was here for internal reference during build; removed
+   from the live page per PROPBILLION's request. The
+   data-img-label attributes stay on the HTML elements so
+   Claude can still find/reference IMAGE 1, PLAN 4 etc. by
+   name in future edits - they just render invisible now.)
    ============================================ */
-[data-img-label] { position: relative; }
-[data-img-label]::before {
-  content: attr(data-img-label);
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 60;
-  background: rgba(17, 17, 17, 0.82);
-  color: #fff;
-  font-family: 'Inter', sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+
+/* ============================================
+   DEAL OF THE DECADE - trending/hit visual treatment
+   ============================================ */
+.dotd-fire-badge {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 4px 10px;
-  border-radius: 6px;
-  pointer-events: none;
-  line-height: 1.4;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.35);
+  color: #FFF6E5;
+  background: linear-gradient(90deg, #C9862E, #E8B95C, #C9862E);
+  background-size: 200% auto;
+  padding: 8px 18px;
+  border-radius: 999px;
+  margin-bottom: 1.1rem;
+  animation: dotdShimmer 2.4s linear infinite, dotdPulse 1.8s ease-in-out infinite;
+  box-shadow: 0 6px 20px -6px rgba(0,0,0,0.5);
 }
+@keyframes dotdShimmer {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+@keyframes dotdPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.045); }
+}
+.dotd-headline {
+  color: var(--bone);
+  font-family: 'Source Serif 4', serif;
+  font-weight: 700;
+  font-size: clamp(30px, 5.2vw, 52px);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  margin: 0;
+  text-shadow: 0 4px 24px rgba(0,0,0,0.35);
+}
+@media (prefers-reduced-motion: reduce) {
+  .dotd-fire-badge { animation: none; }
+}
+
+/* ============================================
+   RERA card - QR column removed per request, so the
+   card is single-column now (no leftover empty gap)
+   ============================================ */
+.rera-card { grid-template-columns: 1fr !important; }
